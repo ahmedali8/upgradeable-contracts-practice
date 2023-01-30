@@ -1,6 +1,4 @@
-import type { SignerWithAddress } from "@nomiclabs/hardhat-ethers/dist/src/signer-with-address";
-
-import type { Lock } from "../../types/Lock";
+import { SignerWithAddress } from "@nomiclabs/hardhat-ethers/dist/src/signers";
 
 type Fixture<T> = () => Promise<T>;
 
@@ -12,9 +10,8 @@ declare module "mocha" {
   }
 }
 
-export interface Contracts {
-  lock: Lock;
-}
+// eslint-disable-next-line @typescript-eslint/no-empty-interface
+export interface Contracts {}
 
 export interface Signers {
   deployer: SignerWithAddress;

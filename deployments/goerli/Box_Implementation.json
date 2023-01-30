@@ -1,0 +1,108 @@
+{
+  "address": "0xDb98ED99A9c512884135ecD0e5C934CEBCc06231",
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "newValue",
+          "type": "uint256"
+        }
+      ],
+      "name": "ValueChanged",
+      "type": "event"
+    },
+    {
+      "inputs": [],
+      "name": "retrieve",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "newValue",
+          "type": "uint256"
+        }
+      ],
+      "name": "store",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "version",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "pure",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0x65752d93bef6f9f08eb9c43c88b184151039d5e2080df04799dc96f2150b4727",
+  "receipt": {
+    "to": null,
+    "from": "0xde43f899587aaa2Ea6aD243F3d68a5027F2C6a94",
+    "contractAddress": "0xDb98ED99A9c512884135ecD0e5C934CEBCc06231",
+    "transactionIndex": 26,
+    "gasUsed": "97905",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0xbca7d727d3f4f773af69dde219f7aeb6d480ca1aab1d9d778a0c3c88b46102f1",
+    "transactionHash": "0x65752d93bef6f9f08eb9c43c88b184151039d5e2080df04799dc96f2150b4727",
+    "logs": [],
+    "blockNumber": 8403372,
+    "cumulativeGasUsed": "5853253",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [],
+  "numDeployments": 1,
+  "solcInputHash": "4653476092044ec4f33041ee29bbebce",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.17+commit.8df45f5f\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"anonymous\":false,\"inputs\":[{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"newValue\",\"type\":\"uint256\"}],\"name\":\"ValueChanged\",\"type\":\"event\"},{\"inputs\":[],\"name\":\"retrieve\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"newValue\",\"type\":\"uint256\"}],\"name\":\"store\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"version\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"pure\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/Box.sol\":\"Box\"},\"evmVersion\":\"london\",\"libraries\":{\":__CACHE_BREAKER__\":\"0x00000000d41867734bbee4c6863d9255b2b06ac1\"},\"metadata\":{\"bytecodeHash\":\"none\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"contracts/Box.sol\":{\"content\":\"// contracts/Box.sol\\n// SPDX-License-Identifier: MIT\\npragma solidity ^0.8.17;\\n\\n\\n\\ncontract Box {\\n    uint256 internal value;\\n\\n    // Emitted when the stored value changes\\n    event ValueChanged(uint256 newValue);\\n\\n    // Stores a new value in the contract\\n    function store(uint256 newValue) public {\\n        value = newValue;\\n        emit ValueChanged(newValue);\\n    }\\n\\n    // Reads the last stored value\\n    function retrieve() public view returns (uint256) {\\n        return value;\\n    }\\n\\n    // Uncomment and redeploy to see the upgrade happen!\\n    // // Increments the stored value by 1\\n    // function increment() public {\\n    //     value = value + 1;\\n    //     emit ValueChanged(value);\\n    // }\\n\\n    // Uncomment and redeploy to see the upgrade happen!\\n    // replace the \\\"1\\\" with a \\\"2\\\"\\n    function version() public pure returns (uint256) {\\n        return 1;\\n    }\\n}\\n\",\"keccak256\":\"0x798062d56762d645dbe9b28b1e52e117f800611e86b77bbfb84d5f39235b6abb\",\"license\":\"MIT\"}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b5060ce8061001f6000396000f3fe6080604052348015600f57600080fd5b5060043610603c5760003560e01c80632e64cec114604157806354fd4d501460575780636057361d14605d575b600080fd5b6000545b60405190815260200160405180910390f35b60016045565b606c606836600460a9565b606e565b005b60008190556040518181527f93fe6d397c74fdf1402a8b72e47b68512f0510d7b98a4bc4cbdf6ac7108b3c599060200160405180910390a150565b60006020828403121560ba57600080fd5b503591905056fea164736f6c6343000811000a",
+  "deployedBytecode": "0x6080604052348015600f57600080fd5b5060043610603c5760003560e01c80632e64cec114604157806354fd4d501460575780636057361d14605d575b600080fd5b6000545b60405190815260200160405180910390f35b60016045565b606c606836600460a9565b606e565b005b60008190556040518181527f93fe6d397c74fdf1402a8b72e47b68512f0510d7b98a4bc4cbdf6ac7108b3c599060200160405180910390a150565b60006020828403121560ba57600080fd5b503591905056fea164736f6c6343000811000a",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [
+      {
+        "astId": 1239,
+        "contract": "contracts/Box.sol:Box",
+        "label": "value",
+        "offset": 0,
+        "slot": "0",
+        "type": "t_uint256"
+      }
+    ],
+    "types": {
+      "t_uint256": {
+        "encoding": "inplace",
+        "label": "uint256",
+        "numberOfBytes": "32"
+      }
+    }
+  }
+}

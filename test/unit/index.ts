@@ -1,9 +1,8 @@
 import { loadFixture } from "@nomicfoundation/hardhat-network-helpers";
-import type { SignerWithAddress } from "@nomiclabs/hardhat-ethers/signers";
+import { SignerWithAddress } from "@nomiclabs/hardhat-ethers/dist/src/signers";
 import { ethers } from "hardhat";
 
 import type { Contracts, Signers } from "../shared/types";
-import { testLock } from "./lock/Lock";
 
 describe("Unit tests", function () {
   before(async function () {
@@ -17,5 +16,5 @@ describe("Unit tests", function () {
     this.loadFixture = loadFixture;
   });
 
-  testLock();
+  // tests
 });
