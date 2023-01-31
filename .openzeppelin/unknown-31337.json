@@ -7,7 +7,12 @@
   "proxies": [
     {
       "address": "0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0",
-      "txHash": "0xc846dedae6e95cb1befa348e1df4ffe7993b786a385ef4a7850ba575435660d3",
+      "txHash": "0xa4dd0c106806581e345564f26f2d2787ab451c56492cccd09d59115d91433848",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x5FC8d32690cc91D4c39d9d3abcBD16989F875707",
+      "txHash": "0xa1051e517059a851ee7ec6ca9c5a35763b322df87082615b95a68f80b323cdb2",
       "kind": "transparent"
     }
   ],
@@ -25,6 +30,29 @@
             "type": "t_uint256",
             "contract": "Box",
             "src": "contracts/Box.sol:8"
+          }
+        ],
+        "types": {
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          }
+        }
+      }
+    },
+    "7ba4e67a49ef2c3959a5576c144efdd11f533287f6bc1d108d82b9304a502508": {
+      "address": "0x0165878A594ca255338adfa4d48449f69242Eb8F",
+      "txHash": "0x248002a6088c075a4e1450f5f76da8d3cc0df506d4e4bf27cdc36a37dbb5efaf",
+      "layout": {
+        "solcVersion": "0.8.17",
+        "storage": [
+          {
+            "label": "value",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint256",
+            "contract": "BoxV2",
+            "src": "contracts/BoxV2.sol:6"
           }
         ],
         "types": {
