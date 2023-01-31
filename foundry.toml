@@ -17,7 +17,12 @@ wrap_comments = true
 [profile.default]
 auto_detect_solc = false
 bytecode_hash = "none"
+build_info = true
+extra_output = ['storageLayout']
 fuzz = { runs = 1_000 }
+ffi = true
+force = true
+fs_permissions = [{ access = "read", path = "./" }]
 gas_reports = ["*"]
 libs = ["node_modules", "lib"]
 optimizer = true

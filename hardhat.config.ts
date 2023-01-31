@@ -1,3 +1,4 @@
+import "@chugsplash/plugins";
 import "@nomicfoundation/hardhat-toolbox";
 import "@openzeppelin/hardhat-upgrades";
 import "@primitivefi/hardhat-dodoc";

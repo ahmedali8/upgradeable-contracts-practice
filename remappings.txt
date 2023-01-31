@@ -3,3 +3,5 @@ forge-std/=lib/forge-std/src/
 hardhat/=node_modules/hardhat/
 src/=src/
 @openzeppelin=node_modules/@openzeppelin/
+chugsplash/=node_modules/@chugsplash/plugins/dist/contracts/
+contracts/=contracts/
