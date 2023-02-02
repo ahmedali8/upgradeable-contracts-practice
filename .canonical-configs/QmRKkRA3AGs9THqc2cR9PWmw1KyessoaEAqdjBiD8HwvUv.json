@@ -1,0 +1,65 @@
+{
+  "options": {
+    "projectName": "Hello ChugSplash"
+  },
+  "contracts": {
+    "HelloChugSplash": {
+      "contract": "contracts/HelloChugSplash.sol:HelloChugSplash",
+      "variables": {
+        "number": 1,
+        "stored": true,
+        "storageName": "First",
+        "otherStorage": "0x1111111111111111111111111111111111111111"
+      },
+      "proxy": "0x764516a018baA99c63202220d986E3859D9A781A"
+    }
+  },
+  "inputs": [
+    {
+      "solcVersion": "0.8.17",
+      "solcLongVersion": "0.8.17+commit.8df45f5f",
+      "input": {
+        "language": "Solidity",
+        "settings": {
+          "metadata": {
+            "bytecodeHash": "none",
+            "useLiteralContent": false
+          },
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "storageLayout",
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "devdoc",
+                "userdoc",
+                "evm.gasEstimates",
+                "storageLayout",
+                "devdoc",
+                "userdoc",
+                "storageLayout",
+                "devdoc",
+                "userdoc"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        },
+        "sources": {
+          "contracts/HelloChugSplash.sol": {
+            "content": "// SPDX-License-Identifier: MIT\npragma solidity ^0.8.17;\nfunction c_f7d531d5(bytes8 c__f7d531d5) pure {}\nfunction c_truef7d531d5(bytes8 c__f7d531d5) pure returns (bool){ return true; }\nfunction c_falsef7d531d5(bytes8 c__f7d531d5) pure returns (bool){ return false; }\n\n\ncontract HelloChugSplash {\nfunction c_9628bfaf(bytes8 c__9628bfaf) internal pure {}\nfunction c_true9628bfaf(bytes8 c__9628bfaf) internal pure returns (bool){ return true; }\nfunction c_false9628bfaf(bytes8 c__9628bfaf) internal pure returns (bool){ return false; }\n\n    uint8 public number;\n    bool public stored;\n    address public otherStorage;\n    string public storageName;\n}\n"
+          }
+        }
+      }
+    }
+  ]
+}

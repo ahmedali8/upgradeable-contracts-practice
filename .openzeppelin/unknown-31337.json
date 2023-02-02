@@ -1,8 +1,8 @@
 {
   "manifestVersion": "3.2",
   "admin": {
-    "address": "0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512",
-    "txHash": "0xfdf24fc84c42071e807879d4ad756621189e5fb4ffe7f284cc4f70814cd10d94"
+    "address": "0x67d269191c92Caf3cD7723F116c85e6E9bf55933",
+    "txHash": "0x18690ef36b4059c3d47f07d0184e5fa8f4b7c87f4b964cec55055a78d059ac00"
   },
   "proxies": [
     {
@@ -13,6 +13,16 @@
     {
       "address": "0x5FC8d32690cc91D4c39d9d3abcBD16989F875707",
       "txHash": "0xa1051e517059a851ee7ec6ca9c5a35763b322df87082615b95a68f80b323cdb2",
+      "kind": "transparent"
+    },
+    {
+      "address": "0xE6E340D132b5f46d1e472DebcD681B2aBc16e57E",
+      "txHash": "0xe7cd6e9c514315fcee368d7cd5b31fd31933a8b21a75ebc5d32f6badfe4a1081",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x9E545E3C0baAB3E08CdfD552C960A1050f373042",
+      "txHash": "0x28e9588a1dc9ad94da332aa8343f3c2dfbb005c3afb3a2cab2c69621f2937ee8",
       "kind": "transparent"
     }
   ],
@@ -53,6 +63,52 @@
             "type": "t_uint256",
             "contract": "BoxV2",
             "src": "contracts/BoxV2.sol:6"
+          }
+        ],
+        "types": {
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          }
+        }
+      }
+    },
+    "8377babeddf9dcf70048c8d02bb4806609506577d1e8c6e33bd3b26174c4247c": {
+      "address": "0xc5a5C42992dECbae36851359345FE25997F5C42d",
+      "txHash": "0x54cf85ef09a944e0113cd01b8858c99271e26b98e4826ee5afc4b29ed0e49237",
+      "layout": {
+        "solcVersion": "0.8.17",
+        "storage": [
+          {
+            "label": "value",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint256",
+            "contract": "Box",
+            "src": "contracts/Box.sol:16"
+          }
+        ],
+        "types": {
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          }
+        }
+      }
+    },
+    "177a4821d5ae2a071b0ea2a77645c3d27d8daea33eccf3c246470f3b586a0e9e": {
+      "address": "0xa82fF9aFd8f496c3d6ac40E2a0F282E47488CFc9",
+      "txHash": "0x850cf62948600d0d0e004db726efdd9d1d09f2aa4cf7d0ee0a1ed75a5303650c",
+      "layout": {
+        "solcVersion": "0.8.17",
+        "storage": [
+          {
+            "label": "value",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint256",
+            "contract": "BoxV2",
+            "src": "contracts/BoxV2.sol:14"
           }
         ],
         "types": {

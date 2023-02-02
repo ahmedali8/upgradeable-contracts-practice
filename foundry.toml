@@ -16,7 +16,7 @@ wrap_comments = true
 
 [profile.default]
 auto_detect_solc = false
-bytecode_hash = "none"
+# bytecode_hash = "none"
 build_info = true
 extra_output = ['storageLayout']
 fuzz = { runs = 1_000 }
