@@ -46,6 +46,8 @@ yarn-error.log*
 **/cache
 .deps
 **/types
+**/deployments/hardhat
+**/deployments/localhost
 
 # Foundry files
 **/foundry_cache
